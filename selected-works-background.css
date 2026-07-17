@@ -1,0 +1,47 @@
+.selected-works-section {
+  isolation: isolate;
+  overflow: hidden;
+  position: relative;
+}
+
+.selected-works-section::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background: url("assets/selected-works-cloudscape.png") center 52% / cover no-repeat;
+  filter: saturate(.82) contrast(.96) brightness(1.04);
+  opacity: .58;
+  mix-blend-mode: multiply;
+}
+
+.selected-works-section::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(242,241,237,.58), rgba(242,241,237,.14) 43%, rgba(242,241,237,.48));
+}
+
+.selected-works-section .projects-head,
+.selected-works-section .projects-grid {
+  position: relative;
+}
+
+.selected-works-section .projects-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.selected-works-section .project-image {
+  box-shadow: 0 10px 30px rgba(46,66,69,.14);
+}
+
+.selected-works-section .project-title {
+  font-size: clamp(1rem, 1.35vw, 1.45rem);
+}
+
+@media (max-width:700px) {
+  .selected-works-section .projects-grid { max-width: none; }
+}

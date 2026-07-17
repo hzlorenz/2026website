@@ -1,0 +1,73 @@
+@keyframes build-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(.8); opacity: 0; }
+  40% { opacity: .7; }
+  75% { transform: translate(-50%, -50%) scale(1.45); opacity: 0; }
+}
+
+@media (pointer: fine) {
+  html.has-water-cursor,
+  html.has-water-cursor * {
+    cursor: none !important;
+  }
+
+  .cursor-lens {
+    position: fixed !important;
+    z-index: 9999 !important;
+    width: 31px;
+    height: 31px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: url("assets/lego-cursor.png") center / contain no-repeat;
+    filter: drop-shadow(0 4px 5px rgba(24, 62, 38, .3));
+    transform: translate(-50%, -50%) scale(.72);
+    transition: width .2s ease, height .2s ease, opacity .16s ease, transform .2s ease, filter .2s ease;
+  }
+
+  .cursor-lens::before,
+  .cursor-lens::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(47, 119, 70, .55);
+    border-radius: 42% 58% 54% 46%;
+    transform: translate(-50%, -50%) scale(.75);
+    opacity: 0;
+  }
+
+  .cursor-lens.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .cursor-lens.is-hovering {
+    width: 55px;
+    height: 55px;
+    filter: drop-shadow(0 6px 9px rgba(24, 62, 38, .38)) saturate(1.2);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .cursor-lens.is-hovering::before {
+    opacity: 1;
+    animation: build-pulse 1.25s ease-out infinite;
+  }
+
+  .cursor-lens.is-hovering::after {
+    width: 64%;
+    height: 64%;
+    border-style: dashed;
+    border-color: rgba(112, 159, 93, .8);
+    opacity: .75;
+    animation: build-pulse 1.25s .38s ease-out infinite;
+  }
+}
