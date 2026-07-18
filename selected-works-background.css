@@ -9,7 +9,7 @@
   position: absolute;
   z-index: -2;
   inset: 0;
-  background: url("assets/selected-works-cloudscape.png") center 52% / cover no-repeat;
+  background: url("assets/projects-train-window.jpg") center 52% / cover no-repeat;
   filter: saturate(.82) contrast(.96) brightness(1.04);
   opacity: .58;
   mix-blend-mode: multiply;

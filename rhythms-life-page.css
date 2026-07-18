@@ -1,0 +1,29 @@
+.rhythms-intro { padding:7vh 8vw 6rem; }
+.rhythms-intro-grid { display:grid; grid-template-columns:minmax(300px,.8fr) minmax(0,1fr); gap:6vw; align-items:center; max-width:1160px; margin:3rem auto 0; }
+.rhythms-video { width:min(100%,480px); margin:0; justify-self:start; aspect-ratio:3/4; overflow:hidden; background:#171915; }
+.rhythms-video video { display:block; width:100%; height:100%; object-fit:cover; }
+.rhythms-title h1 { max-width:700px; margin:.8rem 0 1.25rem; font:500 clamp(2.6rem,4.55vw,5rem)/.98 "Playfair Display",serif; letter-spacing:-.06em; }
+.rhythms-title > p:last-of-type { margin:0; color:var(--sage-dark); font:500 clamp(1.05rem,1.5vw,1.35rem)/1.3 "Playfair Display",serif; }
+.rhythms-tags { margin-top:1.4rem; }
+.rhythms-tags .tag { padding:.32rem .45rem; font-size:.6rem; }
+.rhythms-story { max-width:1160px; margin:0 auto; padding:0 8vw 8rem; }
+.rhythms-prose { max-width:800px; margin:0 auto 5.5rem; }
+.rhythms-prose p { margin:0 0 2.15rem; color:#3d413b; font:500 clamp(1.05rem,1.45vw,1.38rem)/1.55 "Playfair Display",serif; }
+.rhythms-prose p:first-child { color:var(--ink); font-size:clamp(1.33rem,1.95vw,1.9rem); line-height:1.42; }
+.rhythms-process { display:grid; grid-template-columns:1.1fr .9fr; gap:1.5rem; align-items:start; }
+.rhythms-process figure { margin:0; }
+.rhythms-process img { aspect-ratio:4/3; object-fit:cover; }
+.rhythms-process figure:first-child img { object-position:center 30%; }
+.rhythms-process figcaption { margin-top:.75rem; color:var(--sage-dark); font:.62rem/1.45 "DM Mono",monospace; letter-spacing:.04em; text-transform:uppercase; }
+
+@media (max-width:700px) {
+  .rhythms-intro { padding:5vh 6vw 5rem; }
+  .rhythms-intro-grid { grid-template-columns:1fr; gap:2.4rem; margin-top:2.25rem; }
+  .rhythms-video { width:min(100%,420px); justify-self:center; }
+  .rhythms-title h1 { font-size:clamp(2.45rem,10vw,3.55rem); }
+  .rhythms-story { padding:0 6vw 6rem; }
+  .rhythms-prose { margin-bottom:3.5rem; }
+  .rhythms-prose p { margin-bottom:1.8rem; font-size:1rem; }
+  .rhythms-prose p:first-child { font-size:1.33rem; }
+  .rhythms-process { grid-template-columns:1fr; gap:2.2rem; }
+}

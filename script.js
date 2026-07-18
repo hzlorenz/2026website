@@ -1,5 +1,7 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.nav');
+const writingsLink = document.querySelector('.nav a[href="thesis.html"]');
+if (writingsLink) writingsLink.textContent = 'Writings';
 if (menuButton) menuButton.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', isOpen);
@@ -70,4 +72,25 @@ if (studioWindow && aboutSection) {
   window.addEventListener('scroll', requestSceneUpdate, { passive: true });
   window.addEventListener('resize', requestSceneUpdate);
   requestSceneUpdate();
+}
+
+const projectsBackgroundImage = document.querySelector('.projects-background img');
+
+if (projectsBackgroundImage) {
+  let backgroundFrame;
+  const parallaxDistance = 0.08;
+  const updateProjectsBackground = () => {
+    const scrollableDistance = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const progress = Math.min(1, Math.max(0, window.scrollY / scrollableDistance));
+    projectsBackgroundImage.style.setProperty('--projects-background-offset', `${-(window.innerHeight * parallaxDistance * progress)}px`);
+    backgroundFrame = undefined;
+  };
+
+  const requestBackgroundUpdate = () => {
+    if (!backgroundFrame) backgroundFrame = requestAnimationFrame(updateProjectsBackground);
+  };
+
+  window.addEventListener('scroll', requestBackgroundUpdate, { passive: true });
+  window.addEventListener('resize', requestBackgroundUpdate);
+  requestBackgroundUpdate();
 }

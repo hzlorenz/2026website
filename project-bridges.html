@@ -5,18 +5,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Parallel Bridges — Loren Zheng</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="project-detail.css">
+  <link rel="stylesheet" href="bridges-page.css">
 </head>
-<body>
+<body class="bridges-page">
   <header class="site-header"><a class="brand" href="index.html">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="thesis.html">Thesis</a><a href="contact.html">Contact</a></nav></header>
   <main>
-    <section class="detail-hero">
+    <section class="bridges-intro">
       <a class="back-link" href="projects.html">← All projects</a>
-      <p class="eyebrow detail-kicker">Installation · 2024</p>
-      <h1 class="detail-title">Parallel Bridges: A Cultural Dialogue</h1>
-      <figure class="detail-media image-b"><img src="assets/parallel-bridges-cover.png" alt="Parallel Bridges installation artwork"></figure>
+      <div class="bridges-intro-grid">
+        <figure class="bridges-hero-image"><img src="assets/parallel-bridges-ar.jpg" alt="A phone presenting the Parallel Bridges augmented-reality experience at Duke Gardens"></figure>
+        <div class="bridges-title"><p class="eyebrow">Installation · 2024</p><h1>Parallel Bridges: A Cultural Dialogue</h1><p class="bridges-type">Interactive AR</p><div class="tags bridges-tags"><span class="tag">Augmented reality</span><span class="tag">Public space</span><span class="tag">Cultural dialogue</span></div></div>
+      </div>
     </section>
-    <section class="detail-content"><h2>Overview</h2><div><p>An installation exploring how architecture can become a bridge between cultural memory, place, and public encounter.</p><div class="tags"><span class="tag">Installation</span><span class="tag">Public history</span><span class="tag">Spatial storytelling</span></div></div></section>
+
+    <article class="bridges-story">
+      <section class="bridges-prose">
+        <p>Inspired by the Asiatic Arboretum at Duke Gardens, which predominantly features Japanese influences, this project aims to create a more balanced representation of Asian culture by incorporating authentic Chinese architectural elements. The addition of a zigzag stone bridge and a polygonal pavilion introduces a contrasting yet complementary vision of Chinese architecture, often underrepresented in the space.</p>
+        <p>The design incorporates a Chinese-style bridge placed parallel to the iconic red wooden bridge, offering a meaningful juxtaposition that highlights the unique cultural symbolism of each structure. Created using Maya and presented through an augmented reality (AR) experience via Adobe Aero, the installation allows users to interact with the space in real time. As users reach a designated spot and place their anchor, the stairs, stone bridge, and pavilion gradually appear on their phone screens, simulating the process of integrating architectural elements into the natural landscape.</p>
+        <p>This sequential reveal not only emphasizes the presence of Chinese heritage but also invites reflection on how cultural symbols shape our perception of place. By contrasting the Chinese bridge with the Japanese red bridge, the project fosters deeper contemplation about cultural representation and the visual dynamics of mixed heritage.</p>
+      </section>
+
+      <section class="bridges-showcase" aria-labelledby="bridges-composition">
+        <figure class="bridges-composition"><img src="assets/parallel-bridges-composition.png" alt="Augmented-reality bridge and pavilion composition at Duke Gardens"></figure>
+        <div><p class="eyebrow">In place</p><h2 id="bridges-composition">A bridge appears in the landscape.</h2><p>The digital pavilion and bridge are anchored into the garden so their appearance unfolds from the visitor's physical point of view.</p></div>
+      </section>
+
+      <section class="bridges-access" aria-labelledby="bridges-access-title">
+        <div><p class="eyebrow">Experience the work</p><h2 id="bridges-access-title">Open the AR experience.</h2><p>Use a supported device to scan the Adobe Aero code and view Parallel Bridges in the garden.</p></div>
+        <figure class="bridges-qr"><img src="assets/parallel-bridges-qr.png" alt="QR code for the Parallel Bridges Adobe Aero experience"><figcaption>Scan to open in Adobe Aero.</figcaption></figure>
+      </section>
+    </article>
   </main>
   <footer class="footer"><p>© 2026 Loren Zheng</p><p><a href="projects.html">More projects ↗</a></p></footer>
   <script src="script.js"></script>

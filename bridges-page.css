@@ -1,0 +1,31 @@
+.bridges-intro { padding:6vh 8vw 5rem; }
+.bridges-intro-grid { display:grid; grid-template-columns:.82fr 1fr; gap:5vw; align-items:center; max-width:1120px; margin:2.5rem auto 0; }
+.bridges-hero-image { aspect-ratio:4/3; margin:0; overflow:hidden; background:var(--paper-deep); }
+.bridges-hero-image img,.bridges-composition img,.bridges-qr img { width:100%; height:100%; display:block; object-fit:cover; }
+.bridges-hero-image img { object-position:center 54%; filter:saturate(.88) contrast(.95); }
+.bridges-title h1 { max-width:580px; margin:1rem 0 1.35rem; font:500 clamp(2.35rem,4.1vw,4.65rem)/1 "Playfair Display",serif; letter-spacing:-.055em; }
+.bridges-type { color:var(--sage-dark); font:500 clamp(1.1rem,1.65vw,1.45rem)/1.2 "Playfair Display",serif; }
+.bridges-tags { margin-top:1.35rem; }
+.bridges-story { max-width:1120px; margin:0 auto; padding:0 8vw 6rem; }
+.bridges-prose { max-width:760px; margin:0 auto 5rem; }
+.bridges-prose p { margin:0 0 2rem; color:#3d413b; font:500 clamp(1rem,1.35vw,1.32rem)/1.55 "Playfair Display",serif; }
+.bridges-showcase { display:grid; grid-template-columns:.7fr 1fr; gap:6vw; align-items:center; padding:4.5rem 0; border-top:1px solid var(--line); }
+.bridges-composition { aspect-ratio:3/4; margin:0; overflow:hidden; background:var(--paper-deep); }
+.bridges-composition img { object-position:center 54%; }
+.bridges-showcase h2,.bridges-access h2 { max-width:500px; margin:1rem 0 1.2rem; font:500 clamp(2rem,3.35vw,3.5rem)/1 "Playfair Display",serif; letter-spacing:-.05em; }
+.bridges-showcase p:not(.eyebrow),.bridges-access p:not(.eyebrow) { max-width:450px; color:#5e625b; font-size:.92rem; line-height:1.65; }
+.bridges-access { display:grid; grid-template-columns:1fr 240px; gap:6vw; align-items:center; padding:4.5rem 0 0; border-top:1px solid var(--line); }
+.bridges-qr { width:100%; aspect-ratio:1; margin:0; overflow:hidden; background:#fff; }
+.bridges-qr img { object-position:center 53%; }
+.bridges-access figcaption { margin-top:.8rem; color:#5e625b; font:400 .78rem "DM Sans",sans-serif; text-align:center; }
+
+@media (max-width:700px) {
+  .bridges-intro { padding:5vh 6vw 5rem; }
+  .bridges-intro-grid,.bridges-showcase,.bridges-access { grid-template-columns:1fr; gap:2.5rem; }
+  .bridges-title h1 { font-size:clamp(2.65rem,11vw,3.8rem); }
+  .bridges-story { padding:0 6vw 6rem; }
+  .bridges-prose { margin-bottom:5rem; }
+  .bridges-prose p { font-size:1.08rem; margin-bottom:2rem; }
+  .bridges-showcase,.bridges-access { padding:4.5rem 0; }
+  .bridges-qr { width:min(100%,300px); }
+}

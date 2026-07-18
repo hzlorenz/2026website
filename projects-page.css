@@ -1,0 +1,30 @@
+.projects-page { position:relative; isolation:isolate; background:transparent; }
+.projects-background { position:absolute; z-index:0; inset:0; overflow:hidden; pointer-events:none; }
+.projects-background img { width:100%; height:calc(100% + 8vh); object-fit:cover; object-position:center; filter:saturate(.68) contrast(.9) brightness(1.12); transform:translate3d(0,var(--projects-background-offset,0),0); will-change:transform; }
+.projects-background::after { content:""; position:absolute; inset:0; background:rgba(242,241,237,.74); }
+.projects-page > :not(.projects-background) { position:relative; z-index:1; }
+.projects-page .footer { background:rgba(242,241,237,.4); }
+.projects-intro { padding-bottom:4rem; }
+.projects-intro h1 { margin-bottom:1.15rem; font-size:clamp(2.3rem,4.6vw,4.7rem); }
+.projects-page .project-list { max-width:1180px; margin:0 auto; padding-top:0; }
+.projects-page .project-list .project-card { grid-template-columns:270px minmax(0,1fr); gap:2.6rem; padding:1.7rem 0; }
+.projects-page .project-list .project-image { aspect-ratio:4/3; }
+.projects-page .project-title { max-width:620px; margin-top:.45rem; }
+.projects-page .project-card-summary { max-width:600px; margin:.65rem 0 0; font-size:.95rem; }
+.projects-page .project-card-static { cursor:default; }
+.research-thumb { background-image:url("assets/research-in-motion-additions.png"); background-repeat:no-repeat; background-size:300% auto; }
+.research-thumb-rhythms { background-position:left 4%; }
+.research-thumb-liminal { background-position:center 4%; }
+.research-thumb-theaters { background-position:right 4%; }
+.rhythms-list-image { background:url("assets/rhythms-life-touchdesigner.jpg") center 35% / cover no-repeat; }
+
+@media (max-width:700px) {
+  .projects-background img { object-position:54% center; }
+  .projects-background::after { background:rgba(242,241,237,.78); }
+  .projects-intro { padding-bottom:3rem; }
+  .projects-intro h1 { font-size:2.7rem; }
+  .projects-page .project-list .project-card { grid-template-columns:116px minmax(0,1fr); align-items:start; gap:1.15rem; padding:1.1rem 0; }
+  .projects-page .project-title { font-size:1.3rem; }
+  .projects-page .project-card-summary { margin-top:.45rem; font-size:.84rem; }
+  .projects-page .project-list .eyebrow { font-size:.58rem; }
+}
