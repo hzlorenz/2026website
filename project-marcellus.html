@@ -1,1 +1,63 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>XR & the Theater of Marcellus — Loren Zheng</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><a class="brand" href="index.html">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="thesis.html">Thesis</a><a href="contact.html">Contact</a></nav></header><main><section class="detail-hero"><a class="back-link" href="projects.html">← All projects</a><p class="eyebrow" style="margin-top:3rem">XR · 2025</p><h1 class="detail-title">XR &amp; the Theater of Marcellus</h1><div class="detail-media" role="img" aria-label="Replace this block with a project video or feature image"></div></section><section class="detail-content"><h2>Overview</h2><div><p>This project uses virtual reality and augmented reality to reimagine the Theater of Marcellus—one of ancient Rome’s most significant monuments—as a site for active, embodied learning.</p><div class="tags"><span class="tag">XR design</span><span class="tag">Cultural heritage</span><span class="tag">Unity</span></div></div></section></main><footer class="footer"><p>© 2026 Loren Zheng</p><p><a href="projects.html">More projects ↗</a></p></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>XR &amp; the Theater of Marcellus — Loren Zheng</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="marcellus-page.css">
+</head>
+<body class="marcellus-page">
+  <header class="site-header"><a class="brand" href="index.html">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="thesis.html">Thesis</a><a href="contact.html">Contact</a></nav></header>
+  <main>
+    <section class="marcellus-intro">
+      <a class="back-link" href="projects.html">← All projects</a>
+      <div class="marcellus-intro-grid">
+        <figure class="video-frame video-frame-wide"><video controls preload="metadata" poster="assets/marcellus-arrival.jpg"><source src="assets/marcellus-walkthrough.m4v" type="video/x-m4v">Your browser does not support embedded video.</video><figcaption class="video-caption">A walkthrough of the project, screen-recorded through Meta Quest 3, showcasing the immersive AR/VR reconstruction of the Theater of Marcellus.</figcaption></figure>
+        <div class="intro-copy"><p class="eyebrow">Master's thesis · XR · 2025</p><h1>Extended Reality and the Theater of Marcellus: Rethinking Cultural Heritage Through AR &amp; VR</h1></div>
+      </div>
+    </section>
+
+    <article class="marcellus-documentation">
+      <section class="project-text">
+        <p class="project-lede">This project leverages immersive digital technologies, virtual reality (VR) and augmented reality (AR), to reimagine the Theater of Marcellus, one of ancient Rome's most significant monuments.</p>
+        <p>This project leverages immersive digital technologies, virtual reality (VR) and augmented reality (AR), to reimagine the Theater of Marcellus, one of ancient Rome's most significant monuments. By integrating digital reconstruction and interactive experiences, the project explores how Roman spatiality, architectural hierarchy, and political messaging shaped the theater's function and audience experience.</p>
+        <p>Using Blender for 3D modeling and Unity for development, the experience is implemented on Meta Quest 3, allowing users to navigate the theater's structure and engage as Roman spectators. The project highlights the strictly structured seating arrangements, orchestrated movement through space, and the theater's role in imperial display, demonstrating how architecture reinforced social stratification.</p>
+        <p>Beyond visualization, this project examines the balance between scholarly accuracy and interactive engagement, offering a deeper understanding of the theater's historical and cultural significance. Future expansions could introduce narrative-driven experiences and broader accessibility efforts, ensuring that digital reconstructions serve both academic inquiry and public engagement in meaningful ways.</p>
+      </section>
+
+      <section class="documentation-pair" aria-label="Modeling and contextual research">
+        <figure><img src="assets/marcellus-context.png" alt="Academic illustration beside a digital reconstruction of the Theater of Marcellus"><figcaption>By referencing academic illustration and maps, I positioned monuments within my scene to reflect their relative historical locations. This is also the starting point for users in the immersive environment, where they can experience a similar vantage point to see significant monuments in context and their spatial relationships.</figcaption></figure>
+        <figure><img src="assets/marcellus-modeling-process.png" alt="Blender modeling process and scholarly reconstruction references"><figcaption>Modeling process, referencing other scholars' reconstruction.</figcaption></figure>
+      </section>
+
+      <section class="documentation-pair" aria-label="Immersive interface and arrival">
+        <figure><img src="assets/marcellus-overlay.jpg" alt="Augmented reality model overlay with reconstruction certainty controls"><figcaption>Overlay mode for users to inspect the model with different levels of reconstruction certainty.</figcaption></figure>
+        <figure><img src="assets/marcellus-arrival.jpg" alt="Theater of Marcellus arrival scene with historical orientation interface"><figcaption>When users are transported into the immersive scene, they are at the northwest side of the theater; historical information and a map are provided through the interface.</figcaption></figure>
+      </section>
+
+      <section class="documentation-section" aria-labelledby="role-selection">
+        <p class="eyebrow">Interactive system</p><h2 id="role-selection">Role Selection Mechanics</h2>
+        <div class="documentation-trio">
+          <figure><img src="assets/marcellus-role-select.jpg" alt="Role selection menu in the Theater of Marcellus experience"><figcaption>Role selection menu.</figcaption></figure>
+          <figure><img src="assets/marcellus-role-verify.jpg" alt="Role verification with a non-player character inside the theater"><figcaption>Role verification with NPC.</figcaption></figure>
+          <figure><img src="assets/marcellus-role-access.jpg" alt="Roman soldier restricting access to seating areas in the theater"><figcaption>Users are restricted from teleporting to areas that do not align with their assigned role.</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="documentation-section" aria-labelledby="space-experience">
+        <p class="eyebrow">Environmental storytelling</p><h2 id="space-experience">Space and Experience</h2>
+        <div class="documentation-trio">
+          <figure><img src="assets/marcellus-time.jpg" alt="Theater scene with time of day control"><figcaption>Freedom to change the time of the day.</figcaption></figure>
+          <figure><img src="assets/marcellus-performance.jpg" alt="Performance information interface inside the theater"><figcaption>Performance information.</figcaption></figure>
+          <figure><img src="assets/marcellus-wild-beast.jpg" alt="Wild beast performance reconstruction at sunset"><figcaption>Wild beast hunt performance with pivoting opening scene building.</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="freedmen-video" aria-labelledby="freedmen-heading"><div><p class="eyebrow">Walkthrough</p><h2 id="freedmen-heading">The Freedmen role</h2></div><figure class="video-frame video-frame-wide freedmen-frame"><video controls preload="metadata" poster="assets/marcellus-role-select.jpg"><source src="assets/marcellus-freedmen-walkthrough.m4v" type="video/x-m4v">Your browser does not support embedded video.</video><figcaption class="video-caption">When users choose to play the “Freedmen” role.</figcaption></figure></section>
+    </article>
+  </main>
+  <footer class="footer"><p>© 2026 Loren Zheng</p><p><a href="projects.html">More projects ↗</a></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

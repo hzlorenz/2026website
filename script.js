@@ -35,7 +35,7 @@ const projectCovers = [
 ];
 
 projectCovers.forEach(([selector, src, alt]) => {
-  document.querySelectorAll(selector).forEach((cover) => {
+  document.querySelectorAll(`.project-image${selector}`).forEach((cover) => {
     const image = document.createElement('img');
     image.src = src;
     image.alt = alt;

@@ -1,0 +1,7 @@
+.detail-kicker { margin-top:3rem; }
+.detail-media { margin:0; overflow:hidden; background:var(--paper-deep); }
+.detail-media::after { content:none; }
+.detail-media img { width:100%; height:100%; object-fit:cover; object-position:center 48%; filter:saturate(.83) contrast(.96); transition:transform .7s ease; }
+.detail-media:hover img { transform:scale(1.025); }
+.detail-media.image-b img { object-position:center 62%; }
+.detail-media.image-c img { object-position:center 52%; }

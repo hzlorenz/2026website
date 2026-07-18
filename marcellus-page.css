@@ -1,0 +1,40 @@
+.marcellus-page { background:var(--paper); }
+.marcellus-intro { padding:7vh 8vw 8rem; }
+.marcellus-intro-grid { display:grid; grid-template-columns:1fr .92fr; gap:5vw; align-items:center; max-width:1420px; margin:3rem auto 0; }
+.video-frame { margin:0; background:#171915; }
+.video-frame video { display:block; width:100%; height:100%; object-fit:cover; }
+.video-frame-wide video { aspect-ratio:16/9; }
+.intro-copy h1 { max-width:620px; margin:1.2rem 0 0; font:500 clamp(2.15rem,3.65vw,4.6rem)/1.04 "Playfair Display",serif; letter-spacing:-.055em; }
+.video-caption { width:100%; margin:0; padding-top:1.35rem; color:#5e625b; background:var(--paper); font:400 .82rem/1.62 "DM Sans",sans-serif; }
+.marcellus-documentation { max-width:1420px; margin:0 auto; padding:0 8vw 9rem; }
+.project-text { max-width:860px; margin:0 auto 8rem; }
+.project-text p { margin:0 0 2.5rem; color:#3d413b; font:500 clamp(1.05rem,1.42vw,1.4rem)/1.56 "Playfair Display",serif; }
+.project-text .project-lede { color:var(--ink); font-size:clamp(1.45rem,2.15vw,2.2rem); line-height:1.4; }
+.documentation-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3rem; margin-bottom:7rem; }
+.documentation-pair figure,.documentation-trio figure,.freedmen-video figure { margin:0; }
+.documentation-pair img,.documentation-trio img { width:100%; display:block; aspect-ratio:16/9; object-fit:cover; background:var(--paper-deep); }
+.documentation-pair[aria-label="Modeling and contextual research"] figure:first-child img { aspect-ratio:1117/376; object-fit:contain; }
+.marcellus-documentation figcaption { margin-top:.85rem; color:#5e625b; font:400 .82rem/1.62 "DM Sans",sans-serif; }
+.documentation-section { margin:0 0 8rem; }
+.documentation-section > h2,.freedmen-video h2 { margin:1rem 0 2.5rem; font:500 clamp(2.15rem,3.5vw,3.9rem)/1 "Playfair Display",serif; letter-spacing:-.05em; }
+.documentation-trio { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.4rem; }
+.documentation-trio figcaption { text-align:center; }
+.freedmen-video { padding-top:1rem; }
+.freedmen-video > div { margin-bottom:2.5rem; }
+.freedmen-frame { width:100%; max-width:820px; }
+.freedmen-frame video { object-fit:contain; background:#171915; }
+
+@media (max-width:700px) {
+  .marcellus-intro { padding:5vh 6vw 5rem; }
+  .marcellus-intro-grid { grid-template-columns:1fr; gap:2.4rem; margin-top:2.25rem; }
+  .intro-copy h1 { font-size:clamp(2.2rem,10.2vw,3.25rem); }
+  .marcellus-documentation { padding:0 6vw 6rem; }
+  .project-text { margin-bottom:5rem; }
+  .project-text p { font-size:1.02rem; margin-bottom:2rem; }
+  .project-text .project-lede { font-size:1.42rem; }
+  .documentation-pair,.documentation-trio { grid-template-columns:1fr; gap:2.6rem; }
+  .documentation-pair,.documentation-section { margin-bottom:5rem; }
+  .documentation-section > h2,.freedmen-video h2 { margin-bottom:2rem; }
+  .documentation-trio figcaption { text-align:left; }
+  .freedmen-video > div { margin-bottom:2rem; }
+}
