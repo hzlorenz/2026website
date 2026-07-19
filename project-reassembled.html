@@ -3,30 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>reAssembled — Loren Zheng</title>
+  <title data-i18n="reassembled.metaTitle">reAssembled — Loren Zheng</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reassembled-page.css">
 </head>
 <body class="reassembled-page">
-  <header class="site-header"><a class="brand" href="index.html">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">About</a><a aria-current="page" href="projects.html">Projects</a><a href="thesis.html">Thesis</a><a href="photography.html">Photography</a><a href="contact.html">Contact</a></nav></header>
+  <header class="site-header"><a class="brand" data-route="home" href="index.html" data-i18n="site.brand">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false" data-i18n-attr="aria-label:ui.menuButton">☰</button><nav class="nav"><a data-route="about" href="index.html" data-i18n="nav.about">About</a><a aria-current="page" data-route="projects" href="projects.html" data-i18n="nav.projects">Projects</a><a data-route="writing" href="thesis.html" data-i18n="nav.writing">Writings</a><a data-route="photography" href="photography.html" data-i18n="nav.photography">Photography</a><a data-route="contact" href="contact.html" data-i18n="nav.contact">Contact</a></nav></header>
   <main>
     <section class="reassembled-intro">
-      <a class="back-link" href="projects.html">← All projects</a>
+      <a class="back-link" data-route="projects" href="projects.html" data-i18n="ui.allProjects">← All projects</a>
       <div class="reassembled-intro-grid">
-        <figure class="reassembled-video"><video controls preload="metadata" poster="assets/reassembled-cover.png"><source src="assets/reassembled-walkthrough.m4v" type="video/x-m4v">Your browser does not support embedded video.</video></figure>
-        <div class="reassembled-title"><h1>reAssembled</h1><p>A Virtual Exhibition of Reunited Antiquities</p><div class="tags reassembled-tags"><span class="tag">Exhibition design</span><span class="tag">Digital art history</span><span class="tag">Artsteps</span></div></div>
+        <figure class="reassembled-video"><video controls preload="metadata" poster="assets/reassembled-cover.png"><source src="assets/reassembled-walkthrough.m4v" type="video/x-m4v"><span data-i18n="ui.videoUnsupported">Your browser does not support embedded video.</span></video></figure>
+        <div class="reassembled-title"><h1 data-i18n="reassembled.heading">reAssembled</h1><p data-i18n="reassembled.subtitle">A Virtual Exhibition of Reunited Antiquities</p><div class="tags reassembled-tags"><span class="tag" data-i18n="reassembled.tagExhibition">Exhibition design</span><span class="tag" data-i18n="reassembled.tagHistory">Digital art history</span><span class="tag" data-i18n="reassembled.tagArtsteps">Artsteps</span></div></div>
       </div>
     </section>
 
     <article class="reassembled-story">
       <section class="reassembled-prose">
-        <p>Using Artsteps, this is a virtual exhibition that explores the fragmentation, displacement, and potential reunification of selected antiquities from the ancient Mediterranean and ancient West Asia.</p>
-        <p>By bringing together scattered artifacts, such as the Parthenon Marbles and the Ishtar Gate reliefs, the exhibition invites visitors to consider the impact of colonial-era collecting, museum practices, and ongoing repatriation debates. Through putting together 3D models, archival images, and contextual text, the project aims to provide a new perspective on these objects and their histories.</p>
-        <p>While this exhibition is a digital approximation rather than a definitive reconstruction, it hopes to encourage discussion about the ways antiquities are collected, displayed, and remembered. reAssembled does not claim to resolve complex debates but rather seeks to offer a thoughtful space for visitors to engage with the challenges of cultural heritage and imagine possibilities for reconnection.</p>
+        <p data-i18n="reassembled.paragraphOne">Using Artsteps, this is a virtual exhibition that explores the fragmentation, displacement, and potential reunification of selected antiquities from the ancient Mediterranean and ancient West Asia.</p>
+        <p data-i18n="reassembled.paragraphTwo">By bringing together scattered artifacts, such as the Parthenon Marbles and the Ishtar Gate reliefs, the exhibition invites visitors to consider the impact of colonial-era collecting, museum practices, and ongoing repatriation debates. Through putting together 3D models, archival images, and contextual text, the project aims to provide a new perspective on these objects and their histories.</p>
+        <p data-i18n="reassembled.paragraphThree">While this exhibition is a digital approximation rather than a definitive reconstruction, it hopes to encourage discussion about the ways antiquities are collected, displayed, and remembered. reAssembled does not claim to resolve complex debates but rather seeks to offer a thoughtful space for visitors to engage with the challenges of cultural heritage and imagine possibilities for reconnection.</p>
       </section>
     </article>
   </main>
-  <footer class="footer"><p>© 2026 Loren Zheng</p><p><a href="projects.html">More projects ↗</a></p></footer>
+  <footer class="footer"><p data-i18n="footer.copyright">© 2026 Loren Zheng</p><p><a data-route="projects" href="projects.html" data-i18n="footer.moreProjects">More projects ↗</a></p></footer>
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

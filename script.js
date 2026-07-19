@@ -1,7 +1,5 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.nav');
-const writingsLink = document.querySelector('.nav a[href="thesis.html"]');
-if (writingsLink) writingsLink.textContent = 'Writings';
 if (menuButton) menuButton.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', isOpen);
@@ -31,16 +29,17 @@ if (window.matchMedia('(pointer: fine)').matches) {
 }
 
 const projectCovers = [
-  ['.image-a', 'assets/marcellus-cover.jpg', 'XR reconstruction of the Theater of Marcellus'],
-  ['.image-b', 'assets/parallel-bridges-cover.png', 'Parallel Bridges augmented-reality project'],
-  ['.image-c', 'assets/reassembled-cover.png', 'reAssembled virtual exhibition'],
+  ['.image-a', 'assets/marcellus-cover.jpg', 'home.marcellusImageAlt'],
+  ['.image-b', 'assets/parallel-bridges-cover.png', 'home.bridgesImageAlt'],
+  ['.image-c', 'assets/reassembled-cover.png', 'home.reassembledImageAlt'],
 ];
 
-projectCovers.forEach(([selector, src, alt]) => {
+projectCovers.forEach(([selector, src, altKey]) => {
   document.querySelectorAll(`.project-image${selector}`).forEach((cover) => {
     const image = document.createElement('img');
     image.src = src;
-    image.alt = alt;
+    image.alt = '';
+    image.dataset.i18nAttr = `alt:${altKey}`;
     image.loading = 'lazy';
     image.style.cssText = 'height:100%; object-fit:cover; object-position:center;';
     cover.replaceChildren(image);

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Loren Zheng — Digital Storyteller</title>
+        <title data-i18n="home.metaTitle">Loren Zheng — Digital Storyteller</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="about-image.css">
         <link rel="stylesheet" href="about-background.css">
@@ -9,18 +9,18 @@
     </head>
 <body>
     <header class="site-header home-header">
-        <a class="brand" href="index.html">Loren Zheng</a>
-        <button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <nav class="nav"><a aria-current="page" href="index.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="thesis.html">Thesis</a>
-            <a href="photography.html">Photography</a>
-            <a href="contact.html">Contact</a></nav>
+        <a class="brand" data-route="home" href="index.html" data-i18n="site.brand">Loren Zheng</a>
+        <button class="menu-button" aria-label="Toggle menu" aria-expanded="false" data-i18n-attr="aria-label:ui.menuButton">☰</button>
+        <nav class="nav"><a aria-current="page" data-route="about" href="index.html" data-i18n="nav.about">About</a>
+            <a data-route="projects" href="projects.html" data-i18n="nav.projects">Projects</a>
+            <a data-route="writing" href="thesis.html" data-i18n="nav.writing">Writings</a>
+            <a data-route="photography" href="photography.html" data-i18n="nav.photography">Photography</a>
+            <a data-route="contact" href="contact.html" data-i18n="nav.contact">Contact</a></nav>
     </header>
     <main>
         <section class="hero hero-about"><div class="hero-intro">
-            <p class="eyebrow">Digital art history · immersive media</p>
-            <h1>Thoughtful.<br>Curious.<br>Visually driven.</h1>
-            <p class="hero-copy"><em>I create digital experiences by combining design, technology, and storytelling, drawing inspiration from history, culture, and the ways people connect with them.</em></p></div><figure class="hero-room"><img src="assets/photography/DSCF6563.jpg" alt="A flock of birds flying above water and a distant shoreline"></figure><div class="cursor-lens" aria-hidden="true"></div><div class="hero-footer"><span class="scroll-note">Scroll to explore ↓</span></div></section>
-<section class="section section-light about-section"><div class="about-grid"><figure class="portrait-placeholder"><img src="assets/xr-workspace.jpg" alt="Loren's extended-reality development workspace"></figure><div><p class="eyebrow">About me</p><h2 class="section-heading">Where histories become experiences.</h2><div class="about-text"><p>I recently graduated from Duke’s MA in Digital Art History / Computational Media. My work brings together research, digital reconstruction, and interactive storytelling.</p></div><a class="text-link" href="contact.html">Let’s work together ↗</a></div></div></section>
-<section class="section selected-works-section"><div class="projects-head"><div><p class="eyebrow">Selected work</p><h2 class="section-heading">Projects</h2></div><a class="text-link" href="projects.html">View all projects ↗</a></div><div class="projects-grid"><a class="project-card" href="project-marcellus.html"><div class="project-image image-a"></div><div class="project-meta"><span>XR · 2025</span><span>01</span></div><h3 class="project-title">XR &amp; the Theater of Marcellus</h3></a><a class="project-card" href="project-bridges.html"><div class="project-image image-b"></div><div class="project-meta"><span>Installation · 2024</span><span>02</span></div><h3 class="project-title">Parallel Bridges: A Cultural Dialogue</h3></a><a class="project-card" href="project-reassembled.html"><div class="project-image image-c"></div><div class="project-meta"><span>Exhibition · 2024</span><span>03</span></div><h3 class="project-title">reAssembled</h3></a></div></section></main><footer class="footer"><p>© 2026 Loren Zheng</p><p>Designed for curious encounters.</p></footer><script src="script.js"></script></body></html>
+            <p class="eyebrow" data-i18n="home.heroEyebrow">Digital art history · immersive media</p>
+            <h1 data-i18n-html="home.heroTitle">Thoughtful.<br>Curious.<br>Visually driven.</h1>
+            <p class="hero-copy" data-i18n-html="home.heroCopy"><em>I create digital experiences by combining design, technology, and storytelling, drawing inspiration from history, culture, and the ways people connect with them.</em></p></div><figure class="hero-room"><img src="assets/photography/DSCF6563.jpg" alt="A flock of birds flying above water and a distant shoreline" data-i18n-attr="alt:home.heroImageAlt"></figure><div class="cursor-lens" aria-hidden="true"></div><div class="hero-footer"><span class="scroll-note" data-i18n="home.scrollNote">Scroll to explore ↓</span></div></section>
+<section class="section section-light about-section"><div class="about-grid"><figure class="portrait-placeholder"><img src="assets/xr-workspace.jpg" alt="Loren's extended-reality development workspace" data-i18n-attr="alt:home.aboutImageAlt"></figure><div><p class="eyebrow" data-i18n="home.aboutEyebrow">About me</p><h2 class="section-heading" data-i18n="home.aboutHeading">Where histories become experiences.</h2><div class="about-text"><p data-i18n="home.aboutCopy">I recently graduated from Duke’s MA in Digital Art History / Computational Media. My work brings together research, digital reconstruction, and interactive storytelling.</p></div><a class="text-link" data-route="contact" href="contact.html" data-i18n="home.aboutLink">Let’s work together ↗</a></div></div></section>
+<section class="section selected-works-section"><div class="projects-head"><div><p class="eyebrow" data-i18n="home.selectedEyebrow">Selected work</p><h2 class="section-heading" data-i18n="home.selectedHeading">Projects</h2></div><a class="text-link" data-route="projects" href="projects.html" data-i18n="home.allProjectsLink">View all projects ↗</a></div><div class="projects-grid"><a class="project-card" data-route="marcellus" href="project-marcellus.html"><div class="project-image image-a"></div><div class="project-meta"><span data-i18n="home.marcellusMeta">XR · 2025</span><span>01</span></div><h3 class="project-title" data-i18n="home.marcellusTitle">XR &amp; the Theater of Marcellus</h3></a><a class="project-card" data-route="bridges" href="project-bridges.html"><div class="project-image image-b"></div><div class="project-meta"><span data-i18n="home.bridgesMeta">Installation · 2024</span><span>02</span></div><h3 class="project-title" data-i18n="home.bridgesTitle">Parallel Bridges: A Cultural Dialogue</h3></a><a class="project-card" data-route="reassembled" href="project-reassembled.html"><div class="project-image image-c"></div><div class="project-meta"><span data-i18n="home.reassembledMeta">Exhibition · 2024</span><span>03</span></div><h3 class="project-title" data-i18n="home.reassembledTitle">reAssembled</h3></a></div></section></main><footer class="footer"><p data-i18n="footer.copyright">© 2026 Loren Zheng</p><p data-i18n="footer.tagline">Designed for curious encounters.</p></footer><script src="i18n.js"></script><script src="script.js"></script></body></html>

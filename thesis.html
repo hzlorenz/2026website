@@ -3,27 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Thesis &amp; Research — Loren Zheng</title>
+  <title data-i18n="writing.metaTitle">Thesis &amp; Research — Loren Zheng</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="writings-page">
-  <header class="site-header"><a class="brand" href="index.html">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">About</a><a href="projects.html">Projects</a><a aria-current="page" href="thesis.html">Thesis</a><a href="photography.html">Photography</a><a href="contact.html">Contact</a></nav></header>
+  <header class="site-header"><a class="brand" data-route="home" href="index.html" data-i18n="site.brand">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false" data-i18n-attr="aria-label:ui.menuButton">☰</button><nav class="nav"><a data-route="about" href="index.html" data-i18n="nav.about">About</a><a data-route="projects" href="projects.html" data-i18n="nav.projects">Projects</a><a aria-current="page" data-route="writing" href="thesis.html" data-i18n="nav.writing">Writings</a><a data-route="photography" href="photography.html" data-i18n="nav.photography">Photography</a><a data-route="contact" href="contact.html" data-i18n="nav.contact">Contact</a></nav></header>
   <main>
-    <section class="page-intro"><p class="eyebrow">Writing &amp; research</p><h1>Theses</h1><p>A collection of research exploring art history, gender, cultural heritage, and digital media.</p></section>
+    <section class="page-intro"><p class="eyebrow" data-i18n="writing.eyebrow">Writing &amp; research</p><h1 data-i18n="writing.heading">Theses</h1><p data-i18n="writing.intro">A collection of research exploring art history, gender, cultural heritage, and digital media.</p></section>
     <section class="thesis-list">
       <details open>
-        <summary>Affordances of Extended Reality in Cultural Heritage: Rethinking the Theater of Marcellus Through AR and VR</summary>
-        <div class="thesis-copy">Master’s thesis examining how immersive technologies can create new forms of engagement with historic sites and their layered histories. <a class="text-link" href="https://dukespace.lib.duke.edu/server/api/core/bitstreams/b03cd41f-ab20-413f-b77e-aaa0d83f50cf/content" target="_blank" rel="noreferrer">Read thesis ↗</a></div>
+        <summary data-i18n="writing.marcellusTitle">Affordances of Extended Reality in Cultural Heritage: Rethinking the Theater of Marcellus Through AR and VR</summary>
+        <div class="thesis-copy"><span data-i18n="writing.marcellusSummary">Master’s thesis examining how immersive technologies can create new forms of engagement with historic sites and their layered histories.</span> <a class="text-link" href="https://dukespace.lib.duke.edu/server/api/core/bitstreams/b03cd41f-ab20-413f-b77e-aaa0d83f50cf/content" target="_blank" rel="noreferrer" data-i18n="writing.readThesis">Read thesis ↗</a></div>
       </details>
       <details open>
-        <summary>The Mirror: A Feminist Reading of Rubens</summary>
+        <summary data-i18n="writing.mirrorTitle">The Mirror: A Feminist Reading of Rubens</summary>
         <div class="thesis-copy">
-          <div class="mirror-abstract">A research paper exploring mirrors, gender, and the gaze in Peter Paul Rubens’ depictions of women. <details class="mirror-introduction"><summary>Read more ↗</summary><p>This paper explores Peter Paul Rubens’ use of mirrors and the gaze in his depictions of women, particularly in <em>Venus at a Mirror</em>. While mirrors in art have long been associated with vanity and the idealization of female beauty, Rubens’ approach complicates this tradition. By applying theories of the gaze from Foucault, Lacan, and Mulvey, this study examines how Rubens’ work engages with gender roles and power dynamics. While Rubens is often known for his sensualized portrayals of women, this paper investigates whether his use of mirrors subverts or reinforces dominant cultural norms. Through a close analysis of iconography, biography, and artistic context, this research sheds new light on Rubens’ representation of women and the function of mirrors in his visual narrative.</p></details></div>
+          <div class="mirror-abstract"><span data-i18n="writing.mirrorSummary">A research paper exploring mirrors, gender, and the gaze in Peter Paul Rubens’ depictions of women.</span> <details class="mirror-introduction"><summary data-i18n="writing.readMore">Read more ↗</summary><p data-i18n-html="writing.mirrorFull">This paper explores Peter Paul Rubens’ use of mirrors and the gaze in his depictions of women, particularly in <em>Venus at a Mirror</em>. While mirrors in art have long been associated with vanity and the idealization of female beauty, Rubens’ approach complicates this tradition. By applying theories of the gaze from Foucault, Lacan, and Mulvey, this study examines how Rubens’ work engages with gender roles and power dynamics. While Rubens is often known for his sensualized portrayals of women, this paper investigates whether his use of mirrors subverts or reinforces dominant cultural norms. Through a close analysis of iconography, biography, and artistic context, this research sheds new light on Rubens’ representation of women and the function of mirrors in his visual narrative.</p></details></div>
         </div>
       </details>
     </section>
   </main>
-  <footer class="footer"><p>© 2026 Loren Zheng</p><p><a href="contact.html">Get in touch ↗</a></p></footer>
+  <footer class="footer"><p data-i18n="footer.copyright">© 2026 Loren Zheng</p><p><a data-route="contact" href="contact.html" data-i18n="footer.getInTouch">Get in touch ↗</a></p></footer>
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

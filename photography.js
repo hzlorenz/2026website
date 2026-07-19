@@ -63,16 +63,15 @@ const photographyImages = [
   'img017.jpg',
 ].map((filename) => ({
   src: `assets/photography/${filename}`,
-  alt: 'Portfolio photograph by Loren Zheng',
 }));
 
 const photographyGallery = document.querySelector('[data-photography-gallery]');
 
 if (photographyGallery) {
-  photographyGallery.innerHTML = photographyImages.map(({ src, alt }, index) => `
+  photographyGallery.innerHTML = photographyImages.map(({ src }, index) => `
     <li class="photo-item">
       <button class="photo-card" type="button" aria-pressed="false">
-        <img src="${src}" alt="${alt}" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async">
+        <img src="${src}" alt="" data-i18n-attr="alt:photography.photoAlt" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async">
         <span class="photo-count" aria-hidden="true">${index + 1}/${photographyImages.length}</span>
       </button>
     </li>

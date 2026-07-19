@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Photography — Loren Zheng</title>
+  <title data-i18n="photography.metaTitle">Photography — Loren Zheng</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="photography-page.css">
 </head>
 <body class="photography-page">
-  <header class="site-header"><a class="brand" href="index.html">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false">☰</button><nav class="nav"><a href="index.html">About</a><a href="projects.html">Projects</a><a href="thesis.html">Thesis</a><a aria-current="page" href="photography.html">Photography</a><a href="contact.html">Contact</a></nav></header>
+  <header class="site-header"><a class="brand" data-route="home" href="index.html" data-i18n="site.brand">Loren Zheng</a><button class="menu-button" aria-label="Toggle menu" aria-expanded="false" data-i18n-attr="aria-label:ui.menuButton">☰</button><nav class="nav"><a data-route="about" href="index.html" data-i18n="nav.about">About</a><a data-route="projects" href="projects.html" data-i18n="nav.projects">Projects</a><a data-route="writing" href="thesis.html" data-i18n="nav.writing">Writings</a><a aria-current="page" data-route="photography" href="photography.html" data-i18n="nav.photography">Photography</a><a data-route="contact" href="contact.html" data-i18n="nav.contact">Contact</a></nav></header>
   <main>
     <section class="photography-intro">
-      <p class="eyebrow">Selected images</p>
-      <h1>Photography.</h1>
-      <p>Observations from research, making, and life in motion.</p>
+      <p class="eyebrow" data-i18n="photography.eyebrow">Selected images</p>
+      <h1 data-i18n="photography.heading">Photography.</h1>
+      <p data-i18n="photography.intro">Observations from research, making, and life in motion.</p>
     </section>
     <section class="photography-gallery-section" aria-labelledby="photography-gallery-title">
-      <h2 id="photography-gallery-title" class="visually-hidden">Photography gallery</h2>
-      <p class="gallery-scroll-cue">Scroll to see more <span aria-hidden="true">&gt;</span></p>
-      <ul class="photography-gallery" aria-label="Photography gallery" data-photography-gallery></ul>
+      <h2 id="photography-gallery-title" class="visually-hidden" data-i18n="photography.galleryHeading">Photography gallery</h2>
+      <p class="gallery-scroll-cue"><span data-i18n="photography.scrollCue">Scroll to see more</span> <span aria-hidden="true">&gt;</span></p>
+      <ul class="photography-gallery" aria-label="Photography gallery" data-photography-gallery data-i18n-attr="aria-label:photography.galleryHeading"></ul>
     </section>
   </main>
-  <footer class="footer"><p>© 2026 Loren Zheng</p><p>Designed for curious encounters.</p></footer>
+  <footer class="footer"><p data-i18n="footer.copyright">© 2026 Loren Zheng</p><p data-i18n="footer.tagline">Designed for curious encounters.</p></footer>
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
   <script src="photography.js"></script>
 </body>
