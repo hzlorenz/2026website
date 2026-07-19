@@ -1,0 +1,42 @@
+.photography-page { overflow-x:hidden; }
+.photography-intro { padding:9vh 8vw 5.5rem; }
+.photography-intro h1 { margin:1rem 0 1.1rem; font:500 clamp(2.4rem,4.67vw,4.67rem)/.94 "Playfair Display",serif; letter-spacing:-.065em; }
+.photography-intro > p:last-child { max-width:360px; margin:0; color:#5e625b; font-size:1rem; line-height:1.6; }
+.photography-gallery-section { position:relative; padding:0 0 9rem; }
+.gallery-scroll-cue { position:absolute; top:-3.7rem; right:2rem; z-index:1; margin:0; color:#5e625b; font:500 .68rem/1.2 ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing:.04em; text-transform:uppercase; }
+.gallery-scroll-cue span { display:inline-block; margin-left:.25rem; transition:transform .35s cubic-bezier(.22,1,.36,1); }
+.photography-gallery-section:hover .gallery-scroll-cue span { transform:translateX(.2rem); }
+.photography-gallery { display:flex; align-items:flex-start; justify-content:flex-start; gap:0; width:100%; min-height:clamp(40rem,59vw,48rem); margin:-8rem 0 0; padding:5.5rem 2rem 3.5rem; list-style:none; overflow-x:auto; overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:var(--sage) transparent; scroll-padding-inline:8vw; scroll-snap-type:x proximity; isolation:isolate; }
+.photography-gallery::-webkit-scrollbar { height:7px; }
+.photography-gallery::-webkit-scrollbar-thumb { background:var(--sage); }
+.photo-item { position:relative; z-index:0; flex:0 0 clamp(5.5rem,8vw,8.5rem); margin-left:-.2rem; contain:layout paint; transition:flex-basis .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1),z-index 0s linear .6s; scroll-snap-align:start; will-change:flex-basis,transform; }
+.photo-item:first-child { margin-left:0; }
+.photo-card { position:relative; display:block; width:100%; height:clamp(13rem,22vw,17.5rem); padding:0; overflow:hidden; border:1px solid rgba(23,25,21,.18); border-radius:0; background:var(--paper-deep); box-shadow:0 10px 24px rgba(23,25,21,.11); cursor:pointer; transition:height .6s cubic-bezier(.22,1,.36,1),box-shadow .6s cubic-bezier(.22,1,.36,1); }
+.photo-card img { width:100%; height:100%; object-fit:cover; object-position:center; filter:saturate(.84) contrast(.96); transition:filter .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1); }
+.photo-card:focus-visible { outline:2px solid var(--sage-dark); outline-offset:5px; }
+
+.photo-item.is-active { z-index:4; flex-basis:clamp(22.5rem,45vw,42.5rem); transform:translateY(-1.4rem); transition-delay:0s; }
+.photo-item.is-active.is-portrait { flex-basis:clamp(17.5rem,31.25vw,26.25rem); }
+.photo-item.is-active .photo-card { height:auto; aspect-ratio:var(--photo-ratio, 1); box-shadow:0 24px 44px rgba(23,25,21,.2); }
+.photo-item.is-active img { object-fit:contain; object-position:center; filter:saturate(1) contrast(1); transform:none; }
+.photo-count { position:absolute; right:.55rem; bottom:.5rem; z-index:1; color:rgba(255,255,255,.88); font:500 .66rem/1 ui-monospace,SFMono-Regular,Menlo,monospace; letter-spacing:.04em; text-shadow:0 1px 5px rgba(0,0,0,.72); opacity:0; pointer-events:none; transition:opacity .28s ease .16s; }
+.photo-item.is-active .photo-count { opacity:.82; }
+.photo-item:has(~ .photo-item.is-active) { transform:translateX(-1rem); }
+.photo-item.is-active ~ .photo-item { transform:translateX(1rem); }
+
+.visually-hidden { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+@media (max-width:700px) {
+  .photography-intro { padding:6vh 6vw 3.75rem; }
+  .photography-intro h1 { font-size:clamp(2.17rem,10vw,3rem); }
+  .photography-gallery-section { padding-bottom:5rem; }
+  .gallery-scroll-cue { top:-1.8rem; right:6vw; }
+  .photography-gallery { justify-content:flex-start; min-height:38rem; margin-top:-4.5rem; padding:4rem 6vw 2.5rem; scroll-padding-inline:6vw; }
+  .photo-item { flex-basis:6.2rem; margin-left:-.2rem; }
+  .photo-card { height:48vw; min-height:13.5rem; }
+  .photo-item.is-active { flex-basis:min(92vw,30rem); transform:translateY(-.8rem); }
+  .photo-item.is-active.is-portrait { flex-basis:min(75vw,23.75rem); }
+  .photo-item.is-active .photo-card { height:auto; }
+  .photo-item:has(~ .photo-item.is-active) { transform:translateX(-.7rem); }
+  .photo-item.is-active ~ .photo-item { transform:translateX(.7rem); }
+}

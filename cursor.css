@@ -13,20 +13,20 @@
   .cursor-lens {
     position: fixed !important;
     z-index: 9999 !important;
-    width: 31px;
-    height: 31px;
+    width: 12px;
+    height: 12px;
     left: 0;
     top: 0;
     margin: 0;
     opacity: 0;
     pointer-events: none;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
+    border: 1px solid rgba(47, 119, 70, .72);
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(24, 62, 38, .22);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    background: url("assets/lego-cursor.png") center / contain no-repeat;
-    filter: drop-shadow(0 4px 5px rgba(24, 62, 38, .3));
+    background: rgba(239, 243, 232, .82);
+    filter: none;
     transform: translate(-50%, -50%) scale(.72);
     transition: width .2s ease, height .2s ease, opacity .16s ease, transform .2s ease, filter .2s ease;
   }
@@ -51,9 +51,10 @@
   }
 
   .cursor-lens.is-hovering {
-    width: 55px;
-    height: 55px;
-    filter: drop-shadow(0 6px 9px rgba(24, 62, 38, .38)) saturate(1.2);
+    width: 42px;
+    height: 42px;
+    background: rgba(239, 243, 232, .25);
+    box-shadow: 0 5px 12px rgba(24, 62, 38, .25);
     transform: translate(-50%, -50%) scale(1);
   }
 
