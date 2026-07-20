@@ -8,7 +8,7 @@
     "footerLine": "广州 · 期待合作"
   },
   "site": {
-    "brand": "Loren Zheng"
+    "brand": "郑 怀信"
   },
   "nav": {
     "about": "关于",
@@ -36,8 +36,8 @@
     "heroEyebrow": "Digital art history · immersive media",
     "scrollNote": "Scroll to explore ↓",
     "aboutEyebrow": "About me",
-    "aboutHeading": "Where histories become experiences.",
-    "aboutCopy": "I recently graduated from Duke’s MA in Digital Art History / Computational Media. My work brings together research, digital reconstruction, and interactive storytelling.",
+    "aboutHeading": "Where research become experiences.",
+    "aboutCopy": "<p>I recently graduated from Duke University's M.A. in Digital Art History / Computational Media.</p><p>My work begins with research and evolves into interactive experiences. Whether reconstructing ancient architecture, designing immersive environments, or building digital prototypes, I enjoy transforming complex ideas into experiences that people can explore, understand, and remember.</p><p>Working across disciplines has become one of my greatest strengths. I move comfortably between historical research, visual design, 3D production, and technical implementation, using AI as a creative collaborator while keeping thoughtful design and human experience at the center of every project.</p>",
     "aboutLink": "Let’s work together ↗",
     "selectedEyebrow": "Selected work",
     "selectedHeading": "Projects",
@@ -51,7 +51,7 @@
     "heroTitle": "Thoughtful.<br>Curious.<br>Visually driven.",
     "heroCopy": "<em>I create digital experiences by combining design, technology, and storytelling, drawing inspiration from history, culture, and the ways people connect with them.</em>",
     "heroImageAlt": "A flock of birds flying above water and a distant shoreline",
-    "aboutImageAlt": "Loren's extended-reality development workspace",
+    "aboutImageAlt": "Loren wearing a virtual reality headset",
     "marcellusImageAlt": "XR reconstruction of the Theater of Marcellus",
     "bridgesImageAlt": "Parallel Bridges augmented-reality project",
     "reassembledImageAlt": "reAssembled virtual exhibition"
@@ -88,11 +88,11 @@
     "qrAlt": "QR code for the Parallel Bridges Adobe Aero experience"
   },
   "marcellus": {
-    "metaTitle": "XR &amp; the Theater of Marcellus — Loren Zheng",
+    "metaTitle": "Research → Design → Build: the Theater of Marcellus and XR — Loren Zheng",
     "walkthroughCaption": "A walkthrough of the project, screen-recorded through Meta Quest 3, showcasing the immersive AR/VR reconstruction of the Theater of Marcellus.",
     "meta": "Master's thesis · XR · 2025",
     "readOnline": "Read online ↗",
-    "heading": "Extended Reality and the Theater of Marcellus: Rethinking Cultural Heritage Through AR &amp; VR",
+    "heading": "Research → Design → Build: the Theater of Marcellus and XR",
     "tagXr": "XR design",
     "tagHeritage": "Cultural heritage",
     "tagUnity": "Unity",
@@ -163,7 +163,7 @@
     "heading": "Research in motion.",
     "intro": "Research-led experiments in extended reality, cultural heritage, and exhibition design.",
     "marcellusMeta": "01 · XR · 2025",
-    "marcellusTitle": "XR &amp; the Theater of Marcellus",
+    "marcellusTitle": "Research → Design → Build: the Theater of Marcellus and XR",
     "marcellusSummary": "A spatial encounter with Rome’s ancient theater, reconstructed through augmented and virtual reality.",
     "bridgesMeta": "02 · Installation · 2024",
     "bridgesTitle": "Parallel Bridges: A Cultural Dialogue",

@@ -100,7 +100,7 @@
 
   if (window.location.protocol === 'file:') return;
 
-  fetch(`locales/${language}.json`)
+  fetch(`locales/${language}.json`, { cache: 'no-store' })
     .then((response) => {
       if (!response.ok) throw new Error(`Unable to load ${language} translations.`);
       return response.json();

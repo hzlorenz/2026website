@@ -40,7 +40,7 @@
 }
 
 .about-section .portrait-placeholder {
-  box-shadow: 18px 18px 0 rgba(233,231,224,.48);
+  box-shadow: none;
 }
 
 .about-section .about-grid > div:last-child {
